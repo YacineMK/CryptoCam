@@ -101,6 +101,16 @@ li:hover {
   background-color: rgba(112, 0, 255,0.15);
   filter: blur(200px);
 }
+.maginta {
+  position: absolute;
+  left: 0px;
+  top:800px;
+  width: 600px;
+  height: 300px;
+  border-radius: 675px;
+  background-color: rgba(255, 0, 199,0.02);
+  filter: blur(200px);
+}
 .cardsection {
    margin-top: 80px;
 }
@@ -139,6 +149,9 @@ li:hover {
 }
 .card .cont .head h3 {
   margin-top: 10px;
+}
+.cardsection {
+  z-index: 1;
 }
 .card .cont .stats {
   padding-top: 30px;
@@ -222,7 +235,70 @@ li:hover {
   border-radius: 8px;
   color: #ECF1F0;
 }
+.learn-card {
+  padding-top: 70px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-bottom: 70px;
+}
+#hi {
+  width: 20px;
+  height: 20px;
+}
+.learncard div{
+  width: 180px;
+  padding: 18px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+}
+.learncard div:hover {
+  box-shadow: #ECF1F0;
+}
+.learncard div img {
+   width: 50px;
+   height: 50px;
+}
+.learncard div h1 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+.learncard div #active {
+  color: #0FAE96;
+  padding-top: 5px;
+}
+.learncard div p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  color: rgba(182,182,182,0.8);
+}
+.tablesection {
+  padding-top: 60px;
+  margin-left: 7%;
+  margin-right: 7%;
+  width: auto;
+}
+.tablesection table {
+  width: 100%;
+}
+.tablesection table tbody tr{
+  width: 100%;
+}
+th, td {
+  padding: 8px;
+  text-align: center;
+}
 @media screen and (max-width:960px) {
+  .learn-text {
+    text-align: center;
+  }
+  .learn-card {
+    text-align: center;
+  }
   .learn-explore {
     display: flex;
     padding: 0;

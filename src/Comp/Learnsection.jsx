@@ -1,4 +1,6 @@
 import React from 'react'
+import Secendcard from './Secendcard'
+
 
 function Learnsection() {
   return (
@@ -8,7 +10,9 @@ function Learnsection() {
             <p>Explore sensational features to prepare your best investment in cryptocurrency</p>
         </div>
         <div className='learn-card'>
-              
+          <Secendcard />
+          <Secendcard />
+          <Secendcard />
         </div>
        <div className='learn-explore'>
           <div>

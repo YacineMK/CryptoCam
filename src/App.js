@@ -3,6 +3,7 @@ import Cardssection from './Comp/Cardssection';
 import Hero from './Comp/Hero';
 import Learnsection from './Comp/Learnsection';
 import Navbar from './Comp/Navbar';
+import Table from './Comp/Table';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
        <Hero />
        <Cardssection />
        <Learnsection />
+       <Table />
     </div>
   );
 }

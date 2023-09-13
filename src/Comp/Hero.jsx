@@ -4,6 +4,7 @@ import Cards from './Cards'
 function Hero() {
   return (
     <div className='hero'>
+      <div className='maginta'></div>
         <div className='efectpart'>
               <div className='blue'></div>
               <div className='pink'></div>  
