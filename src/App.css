@@ -2,6 +2,7 @@ body {
   background-color: #11011E;
   color: #ECF1F0;
   font-family: 'Raleway', sans-serif;
+  overflow-x: hidden;
 }
 #App {
   margin-left: 5%;
