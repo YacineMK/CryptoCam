@@ -1,5 +1,6 @@
 import './App.css';
 import Cardssection from './Comp/Cardssection';
+import Fotter from './Comp/Fotter';
 import Hero from './Comp/Hero';
 import Learnsection from './Comp/Learnsection';
 import Navbar from './Comp/Navbar';
@@ -14,6 +15,7 @@ function App() {
        <Cardssection />
        <Learnsection />
        <Table />
+       <Fotter />
     </div>
   );
 }

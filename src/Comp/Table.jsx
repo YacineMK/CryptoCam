@@ -10,7 +10,7 @@ function Table() {
         params: {
           vs_currency: 'usd', // Change currency as needed
           order: 'market_cap_desc',
-          per_page: 20, // Number of cryptocurrencies to fetch (top 10)
+          per_page: 15, // Number of cryptocurrencies to fetch (top 10)
           page: 1,
           sparkline: false,
         },
@@ -18,10 +18,10 @@ function Table() {
       .then((resp) => setCryptoData(resp.data))
       .catch((err) => console.log(err));
   }, []);
-
   return (
     <div className='tablesection'>
-      <h1>Market Update</h1>
+      <h1 >Market Update</h1>
+      <p>Cryptocurrency Coins</p>
       <table>
         <thead>
           <tr>
@@ -40,7 +40,7 @@ function Table() {
               <td>{crypto.name}</td>
               <td><img id='hi' alt='coin' src={crypto.image}/></td>
               <td>{crypto.current_price.toFixed(2)}</td>
-              <td>{crypto.price_change_24h.toFixed(3)}</td>
+              <td className={`red ${crypto.price_change_24h > 0 ? 'green' :''}`}>{crypto.price_change_24h.toFixed(2)}</td>
               <td>{crypto.symbol}</td>
             </tr>
           ))}

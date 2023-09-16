@@ -20,6 +20,12 @@ nav {
 
   margin: 0 auto;
 }
+.red {
+  color: red;
+} 
+.red.green {
+  color: #0FAE96;
+}
 ul {
   display: flex;
   list-style: none;
@@ -29,6 +35,9 @@ li {
 }
 span {
   color: #0FAE96;
+}
+thead th{
+  padding-bottom: 20px;
 }
 .login {
   padding-left: 20px;
@@ -40,6 +49,22 @@ span {
   border-color: #0FAE96;
   border-radius: 5px;
   color: #ECF1F0;
+}
+.tablesection h1 {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+}
+.tablesection p{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  color: rgba(182,182,182,0.8);
+  padding-left: 10px;
+  padding-bottom: 12px;
+}
+tr:hover {
+    background-color:rgba(112, 0, 255,0.05);
 }
 li:hover {
   color: #0FAE96;
@@ -284,6 +309,8 @@ li:hover {
 }
 .tablesection table {
   width: 100%;
+  font-family: 'Roboto', sans-serif;
+  padding-top: 20px;
 }
 .tablesection table tbody tr{
   width: 100%;
@@ -291,6 +318,19 @@ li:hover {
 th, td {
   padding: 8px;
   text-align: center;
+}
+.Fotter {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.icon {
+  font-size: 32px;
+  color: rgba(182,182,182,0.8); 
+  padding: 10px;
+}
+.icon:hover {
+  color: rgba(203, 54, 171, 0.5);
 }
 @media screen and (max-width:960px) {
   .learn-text {
@@ -361,4 +401,12 @@ th, td {
   .cardo {
     gap: 15px;
    }
+}
+@media screen and (max-width:520px) {
+  .tablesection {
+    padding-top: 60px;
+    margin-left: 0px;
+    margin-right: 2px;
+    width: auto;
+  }
 }
