@@ -301,6 +301,7 @@ li:hover {
   font-family: 'Roboto', sans-serif;
   color: rgba(182,182,182,0.8);
 }
+
 .tablesection {
   padding-top: 60px;
   margin-left: 7%;
@@ -331,6 +332,14 @@ th, td {
 }
 .icon:hover {
   color: rgba(203, 54, 171, 0.5);
+}
+.table-responsive {
+  overflow-x: auto;
+  max-width: 100%;
+}
+
+table {
+  width: 100%;
 }
 @media screen and (max-width:960px) {
   .learn-text {
@@ -405,6 +414,14 @@ th, td {
    .tablesection table {
     overflow-x: hidden;
    }
+   .table-responsive {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+  
+  table {
+    width: 100%;
+  }
 }
 @media screen and (max-width:520px) {
   .tablesection {
@@ -414,7 +431,12 @@ th, td {
     width: auto;
 
   }
-  .tablesection table {
-    overflow-x: hidden;
-   }
+   .table-responsive {
+    overflow-x: auto;
+    max-width: 100%;
+  }
+  
+  table {
+    width: 100%;
+  }
 }
