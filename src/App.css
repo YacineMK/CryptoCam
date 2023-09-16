@@ -333,14 +333,7 @@ th, td {
 .icon:hover {
   color: rgba(203, 54, 171, 0.5);
 }
-.table-responsive {
-  overflow-x: auto;
-  max-width: 100%;
-}
 
-table {
-  width: 100%;
-}
 @media screen and (max-width:960px) {
   .learn-text {
     text-align: center;
@@ -414,14 +407,6 @@ table {
    .tablesection table {
     overflow-x: hidden;
    }
-   .table-responsive {
-    overflow-x: auto;
-    max-width: 100%;
-  }
-  
-  table {
-    width: 100%;
-  }
 }
 @media screen and (max-width:520px) {
   .tablesection {
@@ -431,12 +416,7 @@ table {
     width: auto;
 
   }
-   .table-responsive {
-    overflow-x: auto;
-    max-width: 100%;
-  }
-  
-  table {
-    width: 100%;
-  }
+  .tablesection table {
+    overflow-x: hidden;
+   }
 }
