@@ -191,6 +191,9 @@ li:hover {
   flex-wrap: wrap;
   flex: start;
 }
+.card .graph {
+  max-width: auto;
+}
 .cardsection {
   margin-left: 7%;
   margin-right: 7%;
@@ -301,7 +304,10 @@ li:hover {
   font-family: 'Roboto', sans-serif;
   color: rgba(182,182,182,0.8);
 }
-
+#graph {
+  max-width: auto;
+  max-height: auto;
+}
 .tablesection {
   padding-top: 60px;
   margin-left: 7%;
@@ -376,7 +382,7 @@ th, td {
      .partL {
        position: fixed;
        top: 80px;
-       left: 0;
+       left: -5px;
        right: 0;
        bottom: 0;
        display: flex;
@@ -384,13 +390,18 @@ th, td {
        flex-direction: column;
        align-items: center;
        justify-content: center;
+       text-align: center;
        transform: translateX(100%);
        transition: transform 1.2s ease-in-out;
        background-color:  #11011E;
        z-index: 999;
+       width: auto;
+     }
+     .partL li {
+      padding-left: 0;
      }
      .partL.open {
-      transform: translateX(0);
+      transform: translateX(0px);
      }
      #non {
       display: none;
@@ -404,19 +415,27 @@ th, td {
   .cardo {
     gap: 15px;
    }
-   .tablesection table {
-    overflow-x: hidden;
-   }
+
 }
 @media screen and (max-width:520px) {
   .tablesection {
     padding-top: 60px;
-    margin-left: 0px;
-    margin-right: 2px;
+    margin: 0;
     width: auto;
-
+    
   }
-  .tablesection table {
-    overflow-x: hidden;
-   }
+  #hd {
+    display: none;
+  }
 }
+@media screen and (max-width:350px) {
+  #graph {
+    display: none;
+  }
+}
+@media screen and (max-width:290px) {
+  #hdmi {
+    display: none;
+  }
+}
+

@@ -15,7 +15,7 @@ function Cards(props) {
         </div>
         <div className='stats'>
           <h3>${Math.floor(props.value / 10)}</h3>
-          <img alt='graph' src={gh}/>
+          <img id='graph' alt='graph' src={gh}/>
         </div>
       </div>
     </div>

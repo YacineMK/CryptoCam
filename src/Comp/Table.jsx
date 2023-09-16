@@ -1,5 +1,6 @@
-import axios from 'axios';
+// Table.js
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 function Table() {
   const [cryptoData, setCryptoData] = useState([]);
@@ -8,9 +9,9 @@ function Table() {
     axios
       .get('https://api.coingecko.com/api/v3/coins/markets', {
         params: {
-          vs_currency: 'usd', // Change currency as needed
+          vs_currency: 'usd',
           order: 'market_cap_desc',
-          per_page: 15, // Number of cryptocurrencies to fetch (top 10)
+          per_page: 15,
           page: 1,
           sparkline: false,
         },
@@ -18,9 +19,10 @@ function Table() {
       .then((resp) => setCryptoData(resp.data))
       .catch((err) => console.log(err));
   }, []);
+
   return (
     <div className='tablesection'>
-      <h1 >Market Update</h1>
+      <h1>Market Update</h1>
       <p>Cryptocurrency Coins</p>
       <table>
         <thead>
@@ -28,9 +30,9 @@ function Table() {
             <th>ID</th>
             <th>Name</th>
             <th>Image</th>
-            <th>Price</th>
-            <th>Change</th>
-            <th>Symbol</th>
+            <th id='hd'>Price</th>
+            <th id='hdmi'>Change</th>
+            <th id='hd'>Symbol</th>
           </tr>
         </thead>
         <tbody>
@@ -38,10 +40,14 @@ function Table() {
             <tr key={index}>
               <td>{crypto.market_cap_rank}</td>
               <td>{crypto.name}</td>
-              <td><img id='hi' alt='coin' src={crypto.image}/></td>
-              <td>{crypto.current_price.toFixed(2)}</td>
-              <td className={`red ${crypto.price_change_24h > 0 ? 'green' :''}`}>{crypto.price_change_24h.toFixed(2)}</td>
-              <td>{crypto.symbol}</td>
+              <td>
+                <img id='hi' alt='coin' src={crypto.image} />
+              </td>
+              <td id='hd'>{crypto.current_price.toFixed(2)}</td>
+              <td id='hdmi' className={`red ${crypto.price_change_24h > 0 ? 'green' : ''}`}>
+                {crypto.price_change_24h.toFixed(2)}
+              </td>
+              <td id='hd'>{crypto.symbol}</td>
             </tr>
           ))}
         </tbody>
