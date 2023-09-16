@@ -423,7 +423,6 @@ th, td {
     padding-top: 60px;
     margin: 0;
     width: auto;
-    
   }
   #hd {
     display: none;
@@ -439,4 +438,4 @@ th, td {
     display: none;
   }
 }
-
+h1 { color: red;}
