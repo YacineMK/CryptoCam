@@ -11,7 +11,7 @@ function Hero() {
         <div className='textpart'>
              <h1>Start and Build Your Crypto Portfolio Here</h1>
              <p>Only at CryptoCap, you can build a good portfolio and learn <br/> best practices about cryptocurrency.</p>
-             <button>Get Started</button>
+             <a href='https://www.youtube.com/watch?v=ZizNvew7DG0&list=PLAAsdVgd9DsLLTBsIHEoE8VJzCdVBXYBE'><button>Get Started</button></a>
         </div>
     </div>
   )
