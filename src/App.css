@@ -336,6 +336,10 @@ th, td {
   .learn-text {
     text-align: center;
   }
+  .tablesection{
+    overflow-x: hidden;
+
+  }
   .learn-card {
     text-align: center;
   }
@@ -408,5 +412,7 @@ th, td {
     margin-left: 0px;
     margin-right: 2px;
     width: auto;
+    overflow-x: hidden;
+
   }
 }
