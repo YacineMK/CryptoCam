@@ -345,7 +345,7 @@ th, td {
     height: 0px;
   }
   body {
-overflow-x: hidden;  
+overflow-x: visible; 
 }
   .learn-text {
     text-align: center;
@@ -404,7 +404,7 @@ overflow-x: hidden;
        width: auto;
      }
      .partL li {
-      padding-left: 0;
+      padding-left: 0px;
      }
      .partL.open {
       transform: translateX(0px);
