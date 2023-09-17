@@ -2,12 +2,15 @@ body {
   background-color: #11011E;
   color: #ECF1F0;
   font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0%;
   overflow-x: hidden;
 }
 #App {
   margin-left: 5%;
   margin-right: 5%;
   width: auto;
+  
 }
 nav {
   color:  #ECF1F0;
@@ -81,6 +84,7 @@ li:hover {
   justify-content: center;
   margin-top: 100px;
   text-align: center;
+
 }
 .hero .textpart p {
   color: rgba(182,182,182,0.8);
@@ -106,14 +110,13 @@ li:hover {
   line-height: 44px;
 }
 .hero .efectpart{
-  width: 100vh;
- 
+  width: 100%;
   position: absolute;
   display: flex;
   justify-content: center;
 }
 .hero .efectpart .pink {
-    width: 540px;
+    max-width: 450px;
     height: 290px;
     flex-shrink: 0;
     border-radius: 675px;
@@ -145,7 +148,6 @@ li:hover {
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
-
 }
 .hero .textpart {
   z-index: 1;
@@ -191,9 +193,6 @@ li:hover {
   justify-content: center;
   flex-wrap: wrap;
   flex: start;
-}
-.card .graph {
-  max-width: auto;
 }
 .cardsection {
   margin-left: 7%;
@@ -342,10 +341,17 @@ th, td {
 }
 
 @media screen and (max-width:960px) {
+  .efectpart {
+    width: 0px;
+    height: 0px;
+  }
+  
   .learn-text {
     text-align: center;
   }
-  
+  .partL li {
+    padding-left:0;
+  }
   .learn-card {
     text-align: center;
   }
@@ -362,9 +368,7 @@ th, td {
     margin-bottom: 30px;
     padding-top: 5px;
   }
-      body {
-        overflow-x: hidden;
-      }
+
      .login {
       display: none;
      }
@@ -438,4 +442,3 @@ th, td {
     display: none;
   }
 }
-h1 { color: red;}
