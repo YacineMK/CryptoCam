@@ -344,7 +344,9 @@ th, td {
     width: 0px;
     height: 0px;
   }
-  
+  body {
+overflow-x: hidden;  
+}
   .learn-text {
     text-align: center;
   }
