@@ -345,7 +345,7 @@ th, td {
     height: 0px;
   }
   body {
-overflow-x: visible; 
+width:100vh;
 }
   .learn-text {
     text-align: center;
