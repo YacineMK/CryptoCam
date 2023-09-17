@@ -123,20 +123,10 @@ li:hover {
     filter: blur(200px);
 }
 .hero .efectpart .blue {
-  width: 540px;
+  width: 450px;
   height: 290px;
   border-radius: 675px;
   background-color: rgba(112, 0, 255,0.15);
-  filter: blur(200px);
-}
-.maginta {
-  position: absolute;
-  left: 0px;
-  top:800px;
-  width: 600px;
-  height: 300px;
-  border-radius: 675px;
-  background-color: rgba(255, 0, 199,0.02);
   filter: blur(200px);
 }
 .cardsection {
